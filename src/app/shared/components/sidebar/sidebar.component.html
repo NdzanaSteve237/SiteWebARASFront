@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<div class="sidebar-overlay" 
+[class.show]="isOpen" 
+(click)="toggleSidebar()">
+</div>
+
+<div class="sidebar" [class.open]="isOpen">
+<div class="sidebar-header">
+<img src="../../../../assets/images/ARAS.jpg" alt="RAS Logo" class="logo">
+<button class="close-btn" (click)="toggleSidebar()">×</button>
+</div>
+
+<div class="sidebar-content">
+<nav>
+ <a routerLink="/home" routerLinkActive="active">
+   <i class="fas fa-home"></i> Accueil
+ </a>
+ <a routerLink="/rencontres" routerLinkActive="active">
+   <i class="fas fa-users"></i> Rencontres
+ </a>
+ <a routerLink="/sport" routerLinkActive="active">
+   <i class="fas fa-futbol"></i> Sport
+ </a>
+ <a routerLink="/randonnees" routerLinkActive="active">
+   <i class="fas fa-hiking"></i> Randonnées
+ </a>
+ <a routerLink="/ecoles" routerLinkActive="active">
+   <i class="fas fa-school"></i> Écoles
+ </a>
+ <a routerLink="/forum" routerLinkActive="active">
+   <i class="fas fa-comments"></i> Forum
+ </a>
+ <a routerLink="/calendrier" routerLinkActive="active">
+   <i class="fas fa-calendar"></i> Calendrier
+ </a>
+</nav>
+</div>
+</div>
