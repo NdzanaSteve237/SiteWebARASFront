@@ -43,6 +43,7 @@
               "entry": "src/server.ts"
             }
           },
+          "inlineStyleFonts": false,
           "configurations": {
             "production": {
               "budgets": [
